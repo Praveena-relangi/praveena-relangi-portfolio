@@ -26,14 +26,14 @@ function AboutMe() {
         Portfolio
       </button>
       <a className='Resume-btn'
-        href="/Praveena_Relangi_Mainframe_Resume.pdf"
+        href="/praveena-relangi-portfolio/Praveena_Relangi_Mainframe_Resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
       >
         Mainframe Resume
       </a>
       <a className='Resume-btn'
-        href="/Praveena_Relangi_FullStack_Resume.pdf"
+        href="/praveena-relangi-poertfolio/Praveena_Relangi_FullStack_Resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
       >
