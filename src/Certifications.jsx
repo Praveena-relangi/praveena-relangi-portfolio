@@ -5,7 +5,7 @@ import AWS from './assets/aws.jpg';
 import HackerRank from './assets/hackerrank.png';
 import LinkedInLearning from './assets/Linkedin-learning.png';
 import Internshala from './assets/internshala.jpg';
-import Nxtwave from './assets/Nxtwave.jpeg';
+import Nxtwave from './assets/Nxtwave.jpg';
 import "./Certifications.css";
 
 function CertificationCard({ image, alt, name, link }) {
