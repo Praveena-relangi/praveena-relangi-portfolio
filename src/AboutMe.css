@@ -1,0 +1,74 @@
+.about-me-container {
+  flex: 2; /* AboutMe section takes up more space */
+  text-align: left;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.about-me-heading {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-me-description {
+  font-size: 20px;
+  color: #161616;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.divider {
+  margin-bottom: 10px;
+}
+
+.about-me-container button,
+.about-me-container a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 8px 8px 0 0; /* Adds space between buttons, wraps cleanly */
+  transition: background-color 0.3s ease;
+  vertical-align: middle;
+}
+
+.Portfolio-btn {
+  background-color: #008CBA; /* Blue */
+  color: white;
+}
+
+.Portfolio-btn:hover {
+  background-color: #4CAF50; /* Green */
+}
+
+.Resume-btn {
+  background-color: #008CBA;
+  color: white;
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+}
+
+.Resume-btn:hover {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 768px) {
+  .about-me-heading {
+    font-size: 28px;
+  }
+
+  .about-me-description {
+    font-size: 16px;
+  }
+
+  .about-me-container button,
+  .about-me-container a {
+    width: 100%;
+    margin: 8px 0 0 0;
+    box-sizing: border-box;
+  }
+}

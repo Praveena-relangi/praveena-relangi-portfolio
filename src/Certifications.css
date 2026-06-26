@@ -1,0 +1,89 @@
+/* Navbar styling is handled by Navbar.css to keep the mobile menu consistent across pages */
+
+/* General Page Styling */
+  .certifications-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width */
+    min-height: 100vh; /* Full height */
+    background: url('/cert_bg.jpg') no-repeat; /* Add your background image */
+    background-size: cover; /* Cover entire container */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Keep background fixed during scrolling */
+    padding: 20px;
+    padding-top: 20px; /* Adjusted to prevent overlapping */
+    box-sizing: border-box;
+  }
+  
+  /* Container Styling */
+  .certifications-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 30px; /* Add spacing between rows and columns */
+    justify-content: center;
+    align-items: start;
+    width: 100%; /* Full width */
+    padding-right: 10px; /* Add some padding for better scroll visibility */
+    padding-bottom: 30px;
+  }
+  
+  /* Card Styling */
+  .certification-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(206, 230, 234, 0.7); /* More transparent background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .certification-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.57); /* Deeper shadow on hover */
+  }
+  
+  /* Image Styling */
+  .certification-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 50%; /* Circular image */
+    border: 2px solid #ddd; /* Border around the image */
+  }
+  
+  /* Name Styling */
+  .certification-name {
+    font-size: 1.1rem;
+    color: #333;
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .certifications-page {
+      padding: 16px;
+    }
+
+    .certifications-container {
+      grid-template-columns: 1fr; /* 1 card per row on small screens */
+      gap: 20px;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .certification-img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .certification-name {
+      font-size: 1rem;
+    }
+  }
+  

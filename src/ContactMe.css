@@ -1,0 +1,112 @@
+.contactme-page {
+    width: 100%; /* Full width */
+    min-height: 100vh; /* Full height */
+    background: url('/contact_bg.jpg') no-repeat center center; /* Background image */
+    background-size: cover; /* Cover the entire container */
+    background-attachment: fixed; /* Fixed during scroll */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar styling is handled by Navbar.css to keep the mobile menu consistent across pages */
+  
+  /* Contact Container */
+  .contact-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row on large screens */
+    gap: 20px; /* Gap between cards */
+    padding: 20px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+  }
+  
+  /* Contact Card Styling */
+  .contact-card {
+    display: flex;
+    align-items: center;
+    background-color: rgba(177, 210, 216, 0.8); /* Semi-transparent background */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  .contact-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Icon Styling */
+  .contact-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+  }
+  
+  /* Info Section */
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .contact-detail {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0 0;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 1024px) {
+    .contact-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row for medium screens */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contactme-page {
+      padding: 16px;
+    }
+
+    .contact-container {
+      grid-template-columns: 1fr; /* Stack cards in a single column */
+      padding: 10px;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .contact-card {
+      padding: 12px 14px;
+    }
+
+    .contact-icon {
+      width: 60px;
+      height: 60px;
+      margin-right: 12px;
+    }
+
+    .contact-name {
+      font-size: 1rem;
+    }
+
+    .contact-detail {
+      font-size: 0.9rem;
+      word-break: break-word;
+    }
+  }
+  
