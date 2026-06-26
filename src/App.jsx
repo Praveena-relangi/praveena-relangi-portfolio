@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Profile from './assets/profile.jpg';
+import Profile from './assets/profile.jpeg';
 import AboutMe from './AboutMe';
 import Portfolio from './Portfolio';
 import Skills from './Skills'; 
